@@ -1,0 +1,132 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background:
+            linear-gradient(to left, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+            url('ai-ti_office.jpg');
+
+    width: 100vw;
+    height: 90vh;
+    background-size: cover;
+    background-position: 0% 25%;
+    color: white;
+
+    font-family: Arial, serif;
+}
+
+#menu {
+    display: flex;
+    width: 100%;
+    height: 64px;
+}
+
+#logo {
+    border-radius: 0 0 50% 0;
+    height: 64px;
+    width: 64px;
+    display: inline-block;
+    background: linear-gradient(135deg, #ca689e, #de8ca1, #dbbc88);
+    text-align: center;
+    margin: 0 16px 0 0;
+    border: 64px;
+
+    text-align: center;
+    padding: 32px 48px 32px 16px;
+    font-size: 12px;
+    box-shadow:  0 0 1em rgba(0, 0, 0, 0.5);
+}
+
+#main, #company, #offers, #contact {
+    flex: 1;
+    height: 100%;
+    color: white;
+    flex-direction:column;
+    justify-content: space-around;
+    position: relative;
+    border-radius: 20px;
+    text-align: center;
+    margin: 16px 16px 32px 16px;
+    font-size: 15px;
+    box-shadow:  0 0 1em rgba(0, 0, 0, 0.5);
+    transition: all 500ms ease;
+}
+#main:hover, #company:hover, #offers:hover, #contact:hover {
+    color: rgb(20,20,20);
+    transition: all 500ms ease;
+}
+
+#main {
+    background: linear-gradient(135deg, #7275a4, #4a4872, #302d4a);
+}
+
+#company {
+    background: linear-gradient(135deg, #5464bf, #6a99ca, #6eb0be);
+}
+
+#offers {
+    background: linear-gradient(135deg, #fa90a3, #d589d2, #bb8ae6);
+}
+
+#contact {
+    background: linear-gradient(135deg, #ca689e, #de8ca1, #dbbc88);
+}
+
+#content {
+    position: relative;
+    height: 80vh;
+    padding: 24px 32px 24px 32px;
+    margin: 50px 50px 200px 33vw;
+    background: rgba(20,20,20, 0.99);
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+img {
+    border-radius: 30px;
+    margin: 0;
+}
+
+#showcase{
+    display: flex;
+    width: 100%;
+    height: 64px;
+}
+
+#a, #b ,#c ,#d {
+    flex: 1;
+    height: 100%;
+    color: white;
+    flex-direction:column;
+    justify-content: space-around;
+    position: relative;
+
+    margin: 8px;
+    padding: 48px 32px 12px 32px;
+    text-align: center;
+
+    border-style: solid;
+    border-color: white;
+    border-width: medium;
+    transition: all 500ms ease;
+}
+
+#a:hover, #b:hover ,#c:hover ,#d:hover {
+    color: #d589d2;
+    border-color: #d589d2;
+    transition: all 500ms ease;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
